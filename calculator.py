@@ -19,11 +19,20 @@ def multiply(num1, num2):
     return num1 * num2
 
 
+def menu_display():
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Division")
+    print("4. Multiplication")
+    print("5. Exit")
+
+
 def main():
     print("=" * 30)
     print("Welcome to python calculator")
     print("=" * 30)
-
+# Displying the menu
+menu_display()
     num1 = get_number()
     num2 = get_number()
     print("Addition: ", add((num1, num2)))
