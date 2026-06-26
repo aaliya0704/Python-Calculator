@@ -3,6 +3,22 @@ def get_number():
     return number
 
 
+def add(num1, num2):
+    return num1 + num2
+
+
+def subtract(num1, num2):
+    return num1 - num2
+
+
+def divide(num1, num2):
+    return num1 / num2
+
+
+def multiply(num1, num2):
+    return num1 * num2
+
+
 def main():
     print("=" * 30)
     print("Welcome to python calculator")
@@ -10,8 +26,10 @@ def main():
 
     num1 = get_number()
     num2 = get_number()
-    print(num1)
-    print(num2)
+    print("Addition: ", add((num1, num2)))
+    print("subtraction: ", subtract(num1, num2))
+    print("Division: ", divide(num1, num2))
+    print("Multiplication: ", multiply(num1, num2))
 
 
 if __name__ == "__main__":
