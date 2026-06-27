@@ -31,14 +31,34 @@ def main():
     print("=" * 30)
     print("Welcome to python calculator")
     print("=" * 30)
-# Displying the menu
-menu_display()
-    num1 = get_number()
-    num2 = get_number()
-    print("Addition: ", add((num1, num2)))
-    print("subtraction: ", subtract(num1, num2))
-    print("Division: ", divide(num1, num2))
-    print("Multiplication: ", multiply(num1, num2))
+    # Displying the menu
+    while True:
+        menu_display()
+        choice = input("Enter your choice [1, 2, 3, 4, 5]: ")
+        if choice == "5":
+            print("Thankyou for using the calculator!")
+            break
+        elif choice in ["1", "2", "3", "4"]:
+            num1 = get_number()
+            num2 = get_number()
+
+            if choice == "1":
+                result = add(num1, num2)
+                print(result)
+
+            elif choice == "2":
+                result = subtract(num1, num2)
+                print(result)
+
+            elif choice == "3":
+                result = divide(num1, num2)
+                print(result)
+
+            elif choice == "4":
+                result = multiply(num1, num2)
+                print(result)
+        else:
+            print("invalid number, make sure you select a number between 1 - 5")
 
 
 if __name__ == "__main__":
