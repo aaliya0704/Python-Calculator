@@ -1,6 +1,6 @@
 # Python Calculator
 
-A simple command-line calculator built in Python to practice fundamental programming concepts such as variables, functions, and loops.
+A command-line calculator built in Python as part of my AI Engineering learning journey. This project focuses on writing clean, modular Python code while practicing functions, loops, conditional statements, exception handling, and Git.
 
 ---
 
@@ -11,49 +11,58 @@ A simple command-line calculator built in Python to practice fundamental program
 - Multiplication
 - Division
 - Menu-driven interface
-- Repeat calculations until exit
+- Repeats until the user exits
+- Division by zero handling using exceptions
 
 ---
 
-## Skills Practiced
+## Concepts Practiced
 
 - Variables
 - User Input
 - Functions
-- Loops
-- Conditional Statements
+- Parameters & Return Values
+- Loops (`while`)
+- Conditional Statements (`if`, `elif`, `else`)
+- Exception Handling (`try`, `except`, `raise`)
+- Program Structure
+- Git & GitHub
 
 ---
 
 ## Project Structure
 
+```
 python-calculator/
-│── calculator.py
-│── README.md
+│
+├── calculator.py
+├── README.md
+└── .gitignore
+```
 
 ---
 
 ## How to Run
 
-1. Clone the repository
+1. Clone or download this repository.
+2. Open the project folder.
+3. Run:
 
-2. Open the folder
-
-3. Run
-
+```bash
 python calculator.py
+```
 
 ---
 
 ## Future Improvements
 
-- Error handling
-- Scientific calculator
-- GUI version
-- Unit testing
+- Handle invalid numeric input
+- Scientific calculator functions
+- GUI version using Tkinter
+- Unit testing with pytest
 
 ---
 
 ## Author
 
-Aaliya
+**Aaliya**
