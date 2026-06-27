@@ -12,6 +12,8 @@ def subtract(num1, num2):
 
 
 def divide(num1, num2):
+    if num2 == 0:
+        raise ZeroDivisionError("Cannot divide by 0")
     return num1 / num2
 
 
@@ -51,8 +53,11 @@ def main():
                 print(result)
 
             elif choice == "3":
-                result = divide(num1, num2)
-                print(result)
+                try:
+                    result = divide(num1, num2)
+                    print(result)
+                except ZeroDivisionError as error:
+                    print("Error", error)
 
             elif choice == "4":
                 result = multiply(num1, num2)
